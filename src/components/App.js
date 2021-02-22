@@ -15,8 +15,7 @@ class App extends React.Component {
     render(){
         return (
             <div className="ui container" style={{marginTop:'10px'}}>
-                <SearchBar onSearchSumbit = {this.onSearchSumbit}/>
-                Found: {this.state.image.length} images
+                <SearchBar onSearchSumbit = {this.onSearchSumbit}/> 
                 <ImageList images={this.state.image}/>
             </div>
             )
